@@ -1,9 +1,4 @@
-#**Traffic Sign Recognition** 
-
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
+**Traffic Sign Recognition** 
 ---
 
 **Build a Traffic Sign Recognition Project**
@@ -29,14 +24,33 @@ The goals / steps of this project are the following:
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
+The [rubric points](https://review.udacity.com/#!/rubrics/481/view) outlined in the project
+guidelines contain the following points which I shall discuss in turn.
+
+* Submission Files - The project submission includes all required files.
+* Dataset Summary - The submission includes a basic summary of the data set.
+* Exploratory Visualization - The submission includes an exploratory visualization on the dataset.
+* Preprocessing - The submission describes the preprocessing techniques used and why these techniques were chosen.
+* Model Architecture - The submission provides details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.
+* Model Training - The submission describes how the model was trained by discussing what optimizer was used, batch size, number of epochs and values for hyperparameters.
+* Solution Design - The project thoroughly discusses the approach taken for deriving and designing a model architecture fit for solving the problem given.
+* Acquiring New Images - The submission includes five new German Traffic signs found on the web, and the images are visualized. Discussion is made as to any particular qualities of the images or traffic signs in the images that may be of interest, such as whether they would be difficult for the model to classify.
+* Performance on New Images - The submission documents the performance of the model when tested on the captured images. The performance on the new images is compared to the accuracy results of the test set.
+* Model Certainty - Softmax Probabilities - The top five softmax probabilities of the predictions on the captured images are outputted. The submission discusses how certain or uncertain the model is of its predictions.
+  
+#### Additional Items, beyond core Rubric
+* Augment the Training Data
+* Analyze New Image Performance in More Detail
+* Create Visualizations of the Softmax Probabilities
+  
+
+Writeup / README
 ---
-###Writeup / README
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+Here is a link to my [project code](https://github.com/cwelton/traffic-sign-classifier)
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+
 
 ###Data Set Summary & Exploration
 
