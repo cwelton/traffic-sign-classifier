@@ -402,3 +402,43 @@ Test a Model on New Images
         0.00063805322861298919% - Speed limit (100km/h)
         0.00000541396593689569% - Pedestrians
   
+
+   This can be summarized as follows:
+   - 75 % of the time the first guess was right
+   - of the 3 cases where that was not the case:
+     - In two cases the correct sign was the second guess
+     - In one case the correct sign was the third guess
+     
+   However:
+   
+   1. "Right-of-way at the next intersection"
+      - First guess:  Slippery road  (99.96%)
+      - Second guess: Right-of-way at the next intersection (0.038%)
+      
+    While the second guess was correct the confidence in the first guess over the correct
+    answer was extreme.
+    
+    
+    This is contrasted with:
+    
+    2. "Children crossing"
+       - First guess: Right-of-way at the next intersection (51.07%)
+       - Second guess: Beware of ice/snow (45.33%)
+       - Third guess: Children crossing (0.03%)
+       
+    Where the correct answer was the third guess, but the probability of that was 10x
+    the probability of the correct guess on "Right-of-way at the next intersection".
+    
+    
+    3. Roundabout mandatory
+       - First guess: Speed limit (70km/h) (64.72%)
+       - Second guess: Roundabout mandatory (34.87%)
+       
+    This one the second guess probability looks reasonable, but intuitively the results
+    are surprising.  We expect the speed limit signs to be red circles with white interiors
+    and numbers, and this sign is nothing like that.  While "Roundabout mandatory" is one
+    of the trickier signs due to the small number of training samples, the misclassification
+    as a speed limit seems peculiar.
+    
+    
+    
