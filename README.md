@@ -415,30 +415,29 @@ Test a Model on New Images
       - First guess:  Slippery road  (99.96%)
       - Second guess: Right-of-way at the next intersection (0.038%)
       
-    While the second guess was correct the confidence in the first guess over the correct
-    answer was extreme.
+       While the second guess was correct the confidence in the first guess over the correct
+       answer was extreme.
     
-    
-    This is contrasted with:
+       This is contrasted with:
     
     2. "Children crossing"
        - First guess: Right-of-way at the next intersection (51.07%)
        - Second guess: Beware of ice/snow (45.33%)
        - Third guess: Children crossing (0.03%)
        
-    Where the correct answer was the third guess, but the probability of that was 10x
-    the probability of the correct guess on "Right-of-way at the next intersection".
+       Where the correct answer was the third guess, but the probability of that was 10x
+       the probability of the correct guess on "Right-of-way at the next intersection".
     
     
     3. Roundabout mandatory
        - First guess: Speed limit (70km/h) (64.72%)
        - Second guess: Roundabout mandatory (34.87%)
        
-    This one the second guess probability looks reasonable, but intuitively the results
-    are surprising.  We expect the speed limit signs to be red circles with white interiors
-    and numbers, and this sign is nothing like that.  While "Roundabout mandatory" is one
-    of the trickier signs due to the small number of training samples, the misclassification
-    as a speed limit seems peculiar.
+       This one the second guess probability looks reasonable, but intuitively the results
+       are surprising.  We expect the speed limit signs to be red circles with white interiors
+       and numbers, and this sign is nothing like that.  While "Roundabout mandatory" is one
+       of the trickier signs due to the small number of training samples, the misclassification
+       as a speed limit seems peculiar.
     
     
     
