@@ -298,7 +298,6 @@ Test a Model on New Images
   | Children crossing                     | ***Right-of-way at the next intersection***   |
   | Keep right                            | Keep right                                    |
   | Roundabout manditory                  | ***Speed limit (70km/h)***                    |
-  |:-------------------------------------:|:---------------------------------------------:| 
 
 
   The model was able to correctly guess 8 of the 12 traffic signs, which gives an accuracy of 75%. 
@@ -319,88 +318,87 @@ Test a Model on New Images
 
    Probabilities for the images are as follows:
    
-            == Actual ==       - Turn right ahead
-      1.00000000000000000000% - *Turn right ahead*
-      0.00000000000000938110% - Yield
-      0.00000000000000000000% - Ahead only
-      0.00000000000000000000% - End of no passing
-      0.00000000000000000000% - No passing
+             == Actual ==       - Turn right ahead
+        1.00000000000000000000% - *Turn right ahead*
+        0.00000000000000938110% - Yield
+        0.00000000000000000000% - Ahead only
+        0.00000000000000000000% - End of no passing
+        0.00000000000000000000% - No passing
 
-           == Actual ==       - No entry
-      0.99942445755004882812% - *No entry*
-      0.00057554931845515966% - Stop
-      0.00000000000001650239% - Road work
-      0.00000000000000000000% - Go straight or right
-      0.00000000000000000000% - Yield
+             == Actual ==       - No entry
+        0.99942445755004882812% - *No entry*
+        0.00057554931845515966% - Stop
+        0.00000000000001650239% - Road work
+        0.00000000000000000000% - Go straight or right
+        0.00000000000000000000% - Yield
 
-           == Actual ==       - Pedestrians
-      0.99999964237213134766% - *Pedestrians*
-      0.00000030158270192260% - Right-of-way at the next intersection
-      0.00000000000874672557% - General caution
-      0.00000000000024022743% - Slippery road
-      0.00000000000000000000% - Traffic signals
+             == Actual ==       - Pedestrians
+        0.99999964237213134766% - *Pedestrians*
+        0.00000030158270192260% - Right-of-way at the next intersection
+        0.00000000000874672557% - General caution
+        0.00000000000024022743% - Slippery road
+        0.00000000000000000000% - Traffic signals
 
-           == Actual ==       - Speed limit (60km/h)
-      0.80218791961669921875% - *Speed limit (60km/h)*
-      0.19507561624050140381% - Speed limit (80km/h)
-      0.00186467752791941166% - No passing for vehicles over 3.5 metric tons
-      0.00084722309838980436% - Speed limit (50km/h)
-      0.00000968348376773065% - Speed limit (100km/h)
+             == Actual ==       - Speed limit (60km/h)
+        0.80218791961669921875% - *Speed limit (60km/h)*
+        0.19507561624050140381% - Speed limit (80km/h)
+        0.00186467752791941166% - No passing for vehicles over 3.5 metric tons
+        0.00084722309838980436% - Speed limit (50km/h)
+        0.00000968348376773065% - Speed limit (100km/h)
 
-           == Actual ==       - Speed limit (50km/h)
-      0.95975565910339355469% - *Speed limit (50km/h)*
-      0.03532156720757484436% - Speed limit (30km/h)
-      0.00492282304912805557% - Speed limit (80km/h)
-      0.00000000096775476521% - Speed limit (120km/h)
-      0.00000000039890279968% - Speed limit (100km/h)
+             == Actual ==       - Speed limit (50km/h)
+        0.95975565910339355469% - *Speed limit (50km/h)*
+        0.03532156720757484436% - Speed limit (30km/h)
+        0.00492282304912805557% - Speed limit (80km/h)
+        0.00000000096775476521% - Speed limit (120km/h)
+        0.00000000039890279968% - Speed limit (100km/h)
 
-           == Actual ==       - Stop
-      1.00000000000000000000% - *Stop*
-      0.00000000000907242770% - Road work
-      0.00000000000001902495% - No passing
-      0.00000000000000922953% - Bicycles crossing
-      0.00000000000000781041% - No entry
+             == Actual ==       - Stop
+        1.00000000000000000000% - *Stop*
+        0.00000000000907242770% - Road work
+        0.00000000000001902495% - No passing
+        0.00000000000000922953% - Bicycles crossing
+        0.00000000000000781041% - No entry
 
-           == Actual ==       - Right-of-way at the next intersection
-      0.99961996078491210938% - Slippery road
-      0.00038006567046977580% - *Right-of-way at the next intersection*
-      0.00000000012087592038% - Dangerous curve to the left
-      0.00000000000000000000% - General caution
-      0.00000000000000000000% - Dangerous curve to the right
+             == Actual ==       - Right-of-way at the next intersection
+        0.99961996078491210938% - Slippery road
+        0.00038006567046977580% - *Right-of-way at the next intersection*
+        0.00000000012087592038% - Dangerous curve to the left
+        0.00000000000000000000% - General caution
+        0.00000000000000000000% - Dangerous curve to the right
 
-           == Actual ==       - General caution
-      1.00000000000000000000% - *General caution*
-      0.00000004330680525300% - Pedestrians
-      0.00000000000000000003% - Traffic signals
-      0.00000000000000000000% - Right-of-way at the next intersection
-      0.00000000000000000000% - Slippery road
+             == Actual ==       - General caution
+        1.00000000000000000000% - *General caution*
+        0.00000004330680525300% - Pedestrians
+        0.00000000000000000003% - Traffic signals
+        0.00000000000000000000% - Right-of-way at the next intersection
+        0.00000000000000000000% - Slippery road
 
-           == Actual ==       - Yield
-      1.00000000000000000000% - *Yield*
-      0.00000000000000000181% - No vehicles
-      0.00000000000000000044% - No entry
-      0.00000000000000000000% - Priority road
-      0.00000000000000000000% - Keep right
+             == Actual ==       - Yield
+        1.00000000000000000000% - *Yield*
+        0.00000000000000000181% - No vehicles
+        0.00000000000000000044% - No entry
+        0.00000000000000000000% - Priority road
+        0.00000000000000000000% - Keep right
 
-           == Actual ==       - Children crossing
-      0.51066815853118896484% - Right-of-way at the next intersection
-      0.45330968499183654785% - Beware of ice/snow
-      0.02962992154061794281% - *Children crossing*
-      0.00588124757632613182% - Dangerous curve to the right
-      0.00033603637712076306% - Bicycles crossing
+             == Actual ==       - Children crossing
+        0.51066815853118896484% - Right-of-way at the next intersection
+        0.45330968499183654785% - Beware of ice/snow
+        0.02962992154061794281% - *Children crossing*
+        0.00588124757632613182% - Dangerous curve to the right
+        0.00033603637712076306% - Bicycles crossing
 
-           == Actual ==       - Keep right
-      1.00000000000000000000% - *Keep right*
-      0.00000000000000017187% - Go straight or right
-      0.00000000000000014774% - Turn left ahead
-      0.00000000000000000073% - Ahead only
-      0.00000000000000000000% - Speed limit (60km/h)
+             == Actual ==       - Keep right
+        1.00000000000000000000% - *Keep right*
+        0.00000000000000017187% - Go straight or right
+        0.00000000000000014774% - Turn left ahead
+        0.00000000000000000073% - Ahead only
+        0.00000000000000000000% - Speed limit (60km/h)
 
-           == Actual ==       - Roundabout mandatory
-      0.64722990989685058594% - Speed limit (70km/h)
-      0.34869647026062011719% - *Roundabout mandatory*
-      0.00342189194634556770% - Speed limit (120km/h)
-      0.00063805322861298919% - Speed limit (100km/h)
-      0.00000541396593689569% - Pedestrians
+             == Actual ==       - Roundabout mandatory
+        0.64722990989685058594% - Speed limit (70km/h)
+        0.34869647026062011719% - *Roundabout mandatory*
+        0.00342189194634556770% - Speed limit (120km/h)
+        0.00063805322861298919% - Speed limit (100km/h)
+        0.00000541396593689569% - Pedestrians
   
-
