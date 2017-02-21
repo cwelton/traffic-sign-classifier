@@ -246,56 +246,161 @@ Model Training
 Test a Model on New Images
 ---
 
-#1. Choose five German traffic signs found on the web and provide them in the report. 
-For each image, discuss what quality or qualities might be difficult to classify.
+1. Choose five German traffic signs found on the web and provide them in the report. 
+   For each image, discuss what quality or qualities might be difficult to classify.
 
-I found 12 german traffic signs on the web for this section, they are as follows:
+   I found 12 german traffic signs on the web for this section, they are as follows:
 
-![sign01](./new_images/104285247.jpg)
-![sign02](./new_images/459381007.jpg)
-![sign03](./new_images/459381075.jpg)
-![sign04](./new_images/459381091.jpg)
-![sign05](./new_images/459381113.jpg)
-![sign06](./new_images/459381273.jpg)
-![sign07](./new_images/459381275.jpg)
-![sign08](./new_images/465921879.jpg)
-![sign09](./new_images/465921887.jpg)
-![sign10](./new_images/465921901.jpg)
-![sign11](./new_images/652756025.jpg)
-![sign12](./new_images/73868065.jpg)
+   ![sign01](./new_images/104285247.jpg)
+   ![sign02](./new_images/459381007.jpg)
+   ![sign03](./new_images/459381075.jpg)
+   ![sign04](./new_images/459381091.jpg)
+   ![sign05](./new_images/459381113.jpg)
+   ![sign06](./new_images/459381273.jpg)
+   ![sign07](./new_images/459381275.jpg)
+   ![sign08](./new_images/465921879.jpg)
+   ![sign09](./new_images/465921887.jpg)
+   ![sign10](./new_images/465921901.jpg)
+   ![sign11](./new_images/652756025.jpg)
+   ![sign12](./new_images/73868065.jpg)
                         
-The first image might be difficult to classify because ...
+   The primary considerations that might make each of these more difficult to classify break down to:
+   - Is the angle of refrence similar to the angle of reference in the training data?
+   - How well did the classifier perform on this type of sign in the test data?
+   - How common is the sign type in the training data?
+   - How complicated is the background for the image?
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
-
-The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
-
-Here are the results of the prediction:
-
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+   Going in each of the images looked high quality and it was difficult to guess which images would
+   have the most difficulty.  However since "Roundabout mandatory" performed poorly on the test data
+   it was a reasonable candidate for difficulty with the new set of images.
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the 
+   test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions 
+   were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set 
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+   (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+  The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+  Here are the results of the prediction:
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+  | Image                                 |     Prediction                                | 
+  |:-------------------------------------:|:---------------------------------------------:| 
+  | Turn right ahead                      | Turn right ahead                              | 
+  | No entry                              | No entry                                      |
+  | Pedestrians                           | Pedestrians                                   |
+  | Speed limit (60km/h)                  | Speed limit (60km/h)                          |
+  | Speed limit (50km/h)                  | Speed limit (50km/h)                          |
+  | Right-of-way at the next intersection | ***Slippery Road***                           |
+  | General caution                       | General caution                               |
+  | Yield                                 | Yield                                         |
+  | Children crossing                     | ***Right-of-way at the next intersection***   |
+  | Keep right                            | Keep right                                    |
+  | Roundabout manditory                  | ***Speed limit (70km/h)***                    |
+  |:-------------------------------------:|:---------------------------------------------:| 
 
 
-For the second image ... 
+  The model was able to correctly guess 8 of the 12 traffic signs, which gives an accuracy of 75%. 
+  This compares on par to the accuracy on the test set of 79.7%
+
+3. Describe how certain the model is when predicting on each of the five new images.
+
+   This can be done by looking at the softmax probabilities for each prediction and identify
+   where in your code softmax probabilities were outputted. Provide the top 5 softmax 
+   probabilities for each image along with the sign type of each probability. 
+
+   (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be 
+    provided such as bar charts)
+
+  The code for making predictions on my final model is located in the next to last cell of the 
+  Ipython notebook.
+
+
+   Probabilities for the images are as follows:
+   
+            == Actual ==       - Turn right ahead
+      1.00000000000000000000% - *Turn right ahead*
+      0.00000000000000938110% - Yield
+      0.00000000000000000000% - Ahead only
+      0.00000000000000000000% - End of no passing
+      0.00000000000000000000% - No passing
+
+           == Actual ==       - No entry
+      0.99942445755004882812% - *No entry*
+      0.00057554931845515966% - Stop
+      0.00000000000001650239% - Road work
+      0.00000000000000000000% - Go straight or right
+      0.00000000000000000000% - Yield
+
+           == Actual ==       - Pedestrians
+      0.99999964237213134766% - *Pedestrians*
+      0.00000030158270192260% - Right-of-way at the next intersection
+      0.00000000000874672557% - General caution
+      0.00000000000024022743% - Slippery road
+      0.00000000000000000000% - Traffic signals
+
+           == Actual ==       - Speed limit (60km/h)
+      0.80218791961669921875% - *Speed limit (60km/h)*
+      0.19507561624050140381% - Speed limit (80km/h)
+      0.00186467752791941166% - No passing for vehicles over 3.5 metric tons
+      0.00084722309838980436% - Speed limit (50km/h)
+      0.00000968348376773065% - Speed limit (100km/h)
+
+           == Actual ==       - Speed limit (50km/h)
+      0.95975565910339355469% - *Speed limit (50km/h)*
+      0.03532156720757484436% - Speed limit (30km/h)
+      0.00492282304912805557% - Speed limit (80km/h)
+      0.00000000096775476521% - Speed limit (120km/h)
+      0.00000000039890279968% - Speed limit (100km/h)
+
+           == Actual ==       - Stop
+      1.00000000000000000000% - *Stop*
+      0.00000000000907242770% - Road work
+      0.00000000000001902495% - No passing
+      0.00000000000000922953% - Bicycles crossing
+      0.00000000000000781041% - No entry
+
+           == Actual ==       - Right-of-way at the next intersection
+      0.99961996078491210938% - Slippery road
+      0.00038006567046977580% - *Right-of-way at the next intersection*
+      0.00000000012087592038% - Dangerous curve to the left
+      0.00000000000000000000% - General caution
+      0.00000000000000000000% - Dangerous curve to the right
+
+           == Actual ==       - General caution
+      1.00000000000000000000% - *General caution*
+      0.00000004330680525300% - Pedestrians
+      0.00000000000000000003% - Traffic signals
+      0.00000000000000000000% - Right-of-way at the next intersection
+      0.00000000000000000000% - Slippery road
+
+           == Actual ==       - Yield
+      1.00000000000000000000% - *Yield*
+      0.00000000000000000181% - No vehicles
+      0.00000000000000000044% - No entry
+      0.00000000000000000000% - Priority road
+      0.00000000000000000000% - Keep right
+
+           == Actual ==       - Children crossing
+      0.51066815853118896484% - Right-of-way at the next intersection
+      0.45330968499183654785% - Beware of ice/snow
+      0.02962992154061794281% - *Children crossing*
+      0.00588124757632613182% - Dangerous curve to the right
+      0.00033603637712076306% - Bicycles crossing
+
+           == Actual ==       - Keep right
+      1.00000000000000000000% - *Keep right*
+      0.00000000000000017187% - Go straight or right
+      0.00000000000000014774% - Turn left ahead
+      0.00000000000000000073% - Ahead only
+      0.00000000000000000000% - Speed limit (60km/h)
+
+           == Actual ==       - Roundabout mandatory
+      0.64722990989685058594% - Speed limit (70km/h)
+      0.34869647026062011719% - *Roundabout mandatory*
+      0.00342189194634556770% - Speed limit (120km/h)
+      0.00063805322861298919% - Speed limit (100km/h)
+      0.00000541396593689569% - Pedestrians
+  
+
